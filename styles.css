@@ -740,12 +740,14 @@ body {
   }
 }
 
-/* Special Session Coordination: centered single card */
-#coordination .organizers-container {
-  display: flex;
-  justify-content: center;
+/* --- Special Session Coordination: force single card width --- */
+#coordination .organizers-container{
+  display: flex !important;
+  justify-content: center !important;
 }
 
-#coordination .organizer-card {
-  max-width: 320px;
+#coordination .organizer-card{
+  width: 320px !important;     
+  max-width: 320px !important;
+  flex: 0 0 320px !important;   
 }
